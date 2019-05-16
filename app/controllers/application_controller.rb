@@ -10,6 +10,8 @@ class App < Sinatra::Base
 
     post '/teams' do
       # binding.pry
+      @team = params[:team]
+      
       erb :'../views/team'
     end
 end
